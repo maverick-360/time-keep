@@ -24,8 +24,10 @@ So my approach to solve this above problem is by making a <b>Google Chrome Exten
   <img src="./img/Pie-Chart.png" alt="Pie Chart">
   <li>Ranking websites based on the time they have been opened -</li>
   <img src="./img/Ranking.png" alt="Ranking">
-  <li>On the <b>Options</b> tab, You can set the time limit of inactivity to stop the tracker. For example: if you have set the limit to 2 minutes, the extension will stop tracking your time spending on the website after you become inactive for 2 minutes on that particular webpage.
+  <li>On the <b>Options</b> tab, one can set the time limit of inactivity to stop the tracker. For example: if you have set the limit to 2 minutes, the extension will stop tracking your time spending on the website after you become inactive for 2 minutes on that particular webpage.
   
-  You can set the gap between graph parts in pie chart -</li>
+  One can set the gap between graph parts in pie chart -</li>
   <img src="./img/Options-1.png" alt="Options">
+  <li>One can <b>Export data as CSV</b> or <b>Backup everything as a JSON file</b> and then can <b>Restore everything</b> from the JSON file.</li>
+  <img src="./img/Options-2.png" alt="Options">
 </ul>
