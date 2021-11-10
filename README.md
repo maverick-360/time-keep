@@ -5,9 +5,9 @@
 
 It is near to impossible for a Google Chrome user to keep his/her browsing habits in track. 
 <ul>
-  <li><b>The Google Chrome Browser</b> does not let its users to view their uptime on a single or multiple webpages.</li>
-    <li>It also does not provide its users with any kind of browsing stats like most active day, or most inactive day of a user.</li>
-      <li>There is also no visual representation like <b>Graphs</b> and <b>Pie Charts</b> of the user's browsing time data.</li>
+  <li>The Google Chrome Browser does not let its users to <b>view their uptime</b> on a single or multiple webpages.</li>
+  <li>It also does not provide its users with any kind of <b>browsing stats</b> like most active day, or most inactive day of a user.</li>
+  <li>There is also <b>no visual representation</b> like <b>Graphs</b> and <b>Pie Charts</b> of the user's browsing time data.</li>
 </ul>
 
 ## Solution
