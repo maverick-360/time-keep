@@ -9,6 +9,6 @@ It is near to impossible for a chrome user to keep his/her browsing habits in tr
       <li>There is also no visual representation like <b>Graphs</b> and <b>Pie Charts</b> of the user's browsing time data.</li>
 </ul>
 
-##Solution
+## Solution
 
 So my approach to solve this above problem is by making a <b>Google Chrome Extension</b> named <b>"Time Keep"</b> which allows Chrome Users to keep track of time spent on specific webpages and also visually representing the data with Bar Diagram and Pie Charts. Also allowing the users to take screenshot of their stats or export the stats.
