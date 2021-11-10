@@ -18,6 +18,8 @@ So my approach to solve this above problem is by making a <b>Google Chrome Exten
 ## Features
 
 <ul>
-  <li>Time spent on the present opened tab is shown on the Extension icon</li>
+  <li>Time spent on the present opened tab is shown on the Extension icon -</li>
   <img src="./img/Time-Logo.jpg" alt="Time-Logo">
+  <li>Included a pie chart displaying the ranking of webpages based on the time -</li>
+  <img src="./img/Pie-Chart.png" alt="Pie Chart">
 </ul>
