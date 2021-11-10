@@ -20,18 +20,18 @@ So my approach to solve this above problem is by making a <b>Google Chrome Exten
 <ul>
   <li>Time spent on the present opened tab is shown on the Extension icon -</li>
   <img src="./img/Time-Logo.jpg" alt="Time-Logo">
-  <div height="5vh"></div>
+  
   <li>Included a pie chart displaying the ranking of webpages based on the time -</li>
   <img src="./img/Pie-Chart.png" alt="Pie Chart"><br>
-    <div style="height: 30px"></div>
+  
   <li>Ranking websites based on the time they have been opened -</li>
   <img src="./img/Ranking.png" alt="Ranking">
-    <div style="height: 30px"></div>
+
   <li>On the <b>Options</b> tab, one can set the time limit of inactivity to stop the tracker. For example: if you have set the limit to 2 minutes, the extension will stop tracking your time spending on the website after you become inactive for 2 minutes on that particular webpage.
   
   One can set the gap between graph parts in pie chart -</li>
   <img src="./img/Options-1.png" alt="Options">
-    <div style="height: 30px"></div>
+
   <li>One can <b>Export data as CSV</b> or <b>Backup everything as a JSON file</b> and then can <b>Restore everything</b> from the JSON file.</li>
   <img src="./img/Options-2.png" alt="Options">
   <li>One can view the daily average data and the all time data-</li>
