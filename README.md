@@ -17,3 +17,7 @@ So my approach to solve this above problem is by making a <b>Google Chrome Exten
 
 ## Features
 
+<ul>
+  <li>Time spent on the present opened tab is shown on the Extension icon
+  <img src="" alt=""></li>
+</ul>
