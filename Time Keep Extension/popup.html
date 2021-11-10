@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Webtime Tracker</title>
+  <link href="css/popup.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1>
+      Time Keep
+      <small>
+        Discover your browsing habits!
+      </small>
+    </h1>
+
+    <div id="pseudomodal" data-visibility="close">
+      <div class="menu">
+        <a href="#" tabindex="-1" id="options">Options</a>
+        &nbsp;
+        <a href="#" tabindex="-1" id="stats">Stats</a>
+        &nbsp;
+        <a href="#" tabindex="-1" id="screenshot">Screenshot</a>
+        &nbsp;
+        <a href="#" tabindex="-1" id="faq">FAQ</a>
+        &nbsp;
+        <a href="#" tabindex="-1" id="close">
+          &#x2716;
+        </a>
+      </div>
+
+      <div class="content">
+        <div class="container options">
+          <div id="idle-time">
+          </div>
+
+          <div id="graph-gap">
+          </div>
+
+          <div id="badge-display">
+          </div>
+
+          <div class="halves-wrapper">
+            <div class="half">
+              <a href="#" tabindex="-1" class="button options-export-csv">
+                Export to CSV
+              </a>
+              <a href="#" tabindex="-1" class="button options-backup">
+                Backup
+              </a>
+              <a href="#" tabindex="-1" class="button with-loader options-restore">
+                <span class="text" data-default="Restore" data-warning="Corrupted data!" data-restored="Data restored!">
+                  Restore
+                </span>
+
+                <div class="loading">
+                  <div class="shifter"></div>
+                </div>
+                <input type="file" accept="application/json">
+              </a>
+            </div>
+            <div class="half">
+              <a href="#" tabindex="-1" class="button with-loader options-reset-settings">
+                <span class="text" data-default="Reset settings" data-active="Really?">
+                  Reset settings
+                </span>
+
+                <div class="loading">
+                  <div class="shifter"></div>
+                </div>
+              </a>
+              <a href="#" tabindex="-1" class="button with-loader options-clear-all">
+                <span class="text" data-default="Clear all data" data-active="Really?">
+                  Clear all data
+                </span>
+
+                <div class="loading">
+                  <div class="shifter"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="container stats">
+          <dl>
+            <dt>
+              Domain stats
+            </dt>
+            <dd>
+              Click on a domain row in the stats table to reveal detailed stats about given domain.
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              Overall stats
+            </dt>
+            <dd class="stats-wrapper">
+              <div class="text"></div>
+              <div class="charts"></div>
+            </dd>
+          </dl>
+        </div>
+
+        <div class="container screenshot">
+          <dl>
+            <dt>
+              How to take a screenshot
+            </dt>
+            <dd>
+              <div class="list"></div>
+            </dd>
+          </dl>
+        </div>
+
+        <div class="container faq">
+          <dl>
+            <dt>
+              Security and privacy
+            </dt>
+            <dd>
+              No data are transmitted to anywhere, ever.
+              Everything stays in your browser.
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              How come it is free?
+            </dt>
+            <dd>
+              This extension started as a personal tool, there was and there is no intention of making money.
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="wrapper" data-visibility="today">
+
+    <div class="doughnut-wrapper">
+      <div id="doughnut-today" class="doughnut-container sign-today-display"></div>
+      <div id="doughnut-average" class="doughnut-container sign-average-display"></div>
+      <div id="doughnut-alltime" class="doughnut-container sign-alltime-display"></div>
+    </div>
+
+    <nav class="chart-types">
+      <ul>
+        <li class="active">
+          <a href="#" tabindex="-1" class="sign-today-link" data-visibility="today">
+            Today
+          </a>
+        </li>
+        <li>
+          <a href="#" tabindex="-1" class="sign-average-link" data-visibility="average">
+            Daily average
+          </a>
+        </li>
+        <li>
+          <a href="#" tabindex="-1" class="sign-alltime-link" data-visibility="alltime">
+            All-time
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <br>
+
+    <div class="table-container sign-today-display">
+      <table class="datatable" id="table-today" data-range="today"></table>
+    </div>
+    <div class="table-container sign-average-display">
+      <table class="datatable" id="table-average" data-range="average"></table>
+    </div>
+    <div class="table-container sign-alltime-display">
+      <table class="datatable" id="table-alltime" data-range="alltime"></table>
+    </div>
+
+  </div>
+
+  <footer>
+    Made with
+    <span class="heart">
+      ♥
+    </span>
+    by Soumavo Dey
+  </footer>
+
+  <div class="screenshot-overlay"></div>
+
+  <div class="screenshot-content screenshot-capture">
+    <a href="#" tabindex="-1" class="button capture">
+      Take screenshot
+    </a>
+  </div>
+
+  <div class="screenshot-info">
+    <dl>
+      <dt>
+        How to take a screenshot
+      </dt>
+      <dd>
+        <div class="instructions">
+          <div class="list">
+          </div>
+
+          <a href="#" tabindex="-1" class="button ok">
+            Ok, let's go!
+          </a>
+        </div>
+
+        <div class="permission-grant">
+          This feature needs
+          <a tabindex="-1" target="_blank" class="external"
+            href="https://developer.chrome.com/extensions/tabs#method-captureVisibleTab">
+            &lt;all_urls&gt;</a>
+          permission to work
+
+          <a href="#" tabindex="-1" class="button grant">
+            Grant permission
+          </a>
+        </div>
+
+      </dd>
+    </dl>
+  </div>
+
+  <div class="js-templates">
+
+    <template id="stats-domain">
+      <tr class="stats">
+        <td class="label">
+          <div class="border">ahoj</div>
+        </td>
+        <td class="content" colspan="3">
+
+          <div class="stats-halves-wrapper">
+            <div class="half">
+              Visited<br>
+              <strong class="days-domain"></strong> days out of <strong class="days-total"></strong>
+            </div>
+            <div class="half">
+              Open<br>
+              <a href="#" class="url external" tabindex="-1" target="_blank"></a>
+            </div>
+          </div>
+
+          <div class="stats-halves-wrapper">
+            <div class="half">
+              Rank today<br>
+              <strong>
+                <span class="rank-today-position"></span>
+                /
+                <span class="rank-today-total"></span>
+              </strong>
+            </div>
+            <div class="half">
+              Rank all-time<br>
+              <strong>
+                <span class="rank-alltime-position"></span>
+                /
+                <span class="rank-alltime-total"></span>
+              </strong>
+            </div>
+          </div>
+
+          <div class="stats-halves-wrapper">
+            <div class="half">
+              First visit<br>
+              <strong class="visits-first"></strong>
+            </div>
+            <div class="half">
+              Last visit<br>
+              <strong class="visits-last"></strong>
+            </div>
+          </div>
+
+          <div class="stats-halves-wrapper">
+            <div class="half">
+              <span title="Only active days included">Most inactive day</span><br>
+              <strong class="time-min-date"></strong><br>
+              <span class="bold time time-min"></span>
+            </div>
+            <div class="half">
+              Most active day<br>
+              <strong class="time-max-date"></strong><br>
+              <span class="bold time time-max"></span>
+            </div>
+          </div>
+
+          <div class="stats-halves-wrapper">
+            <div class="half">
+              Today<br>
+              <span class="bold time time-today"></span>
+            </div>
+            <div class="half">
+              All-time<br>
+              <span class="bold time time-alltime"></span>
+            </div>
+          </div>
+
+          <div class="stats-halves-wrapper">
+            <div class="half">
+              Daily average<br>
+              <span class="bold time time-average"></span>
+            </div>
+            <div class="half">
+              <span title="Only active days included">Pure average</span><br>
+              <span class="bold time time-average-pure"></span>
+            </div>
+          </div>
+
+        </td>
+      </tr>
+    </template>
+
+    <template id="stats-overall">
+
+      <div class="stats-halves-wrapper">
+        <div class="half">
+          First day<br>
+          <strong class="visits-first"></strong>
+        </div>
+        <div class="half">
+          Last day<br>
+          <strong class="visits-last"></strong>
+        </div>
+      </div>
+
+      <div class="stats-halves-wrapper">
+        <div class="half">
+          <span title="Days when at least one webpage visited">Active days</span><br>
+          <strong class="days-visited"></strong>
+        </div>
+        <div class="half">
+          Days in total<br>
+          <strong class="days-total"></strong>
+        </div>
+      </div>
+
+      <div class="stats-halves-wrapper">
+        <div class="half">
+          <span title="Only active days included">Most inactive day</span><br>
+          <strong class="time-min-date"></strong><br>
+          <span class="bold time time-min"></span>
+        </div>
+        <div class="half">
+          Most active day<br>
+          <strong class="time-max-date"></strong><br>
+          <span class="bold time time-max"></span>
+        </div>
+      </div>
+
+      <div class="stats-halves-wrapper">
+        <div class="half">
+          Today<br>
+          <span class="bold time time-today"></span>
+        </div>
+        <div class="half">
+          All-time<br>
+          <span class="bold time time-alltime"></span>
+        </div>
+      </div>
+
+      <div class="stats-halves-wrapper">
+        <div class="half">
+          Daily average<br>
+          <span class="bold time time-average"></span>
+        </div>
+        <div class="half">
+          <span title="Only active days included">Pure average</span><br>
+          <span class="bold time time-average-pure"></span>
+        </div>
+      </div>
+    </template>
+
+
+    <template id="stats-charts">
+      <div class="chart-days">
+        <div class="chart"></div>
+        <div class="info">
+          <div class="left"><strong></strong></div>
+          <div class="right"><strong></strong></div>
+          <div class="center"><strong class="date">&nbsp;</strong><br> <span class="bold time">&nbsp;</span>
+          </div>
+        </div>
+      </div>
+      <div class="chart-daynames">
+        <div class="chart"></div>
+        <div class="info">
+          <div class="dayname">
+            <div>Mo</div>
+            <div>Tu</div>
+            <div>We</div>
+            <div>Th</div>
+            <div>Fr</div>
+            <div>Sa</div>
+            <div>Su</div>
+          </div>
+          <div class="center">
+            <span class="bold percentage">&nbsp;</span>
+            <span class="bold time">&nbsp;</span>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <!-- Appears in #pseudomodal menu and in screenshot-info modal-->
+    <template id="screenshot-info-instructions-list">
+      <ul>
+        <li>
+          Adjust the window size
+        </li>
+        <li>
+          Scrollbars are hidden but you can still scroll
+        </li>
+        <li>
+          Only visible area will be captured
+        </li>
+        <li>
+          Hover over graph part to set it visible
+        </li>
+        <li>
+          Click "Take screenshot"
+        </li>
+      </ul>
+    </template>
+
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/fn.js"></script>
+  <script src="js/primitive-renderer.js"></script>
+  <script src="popup.js"></script>
+
+</body>
+
+</html>
