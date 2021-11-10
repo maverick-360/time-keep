@@ -30,6 +30,6 @@ So my approach to solve this above problem is by making a <b>Google Chrome Exten
   <img src="./img/Options-1.png" alt="Options">
   <li>One can <b>Export data as CSV</b> or <b>Backup everything as a JSON file</b> and then can <b>Restore everything</b> from the JSON file.</li>
   <img src="./img/Options-2.png" alt="Options">
-  <li>One can view the daily average data -</li>
-  <img src="./img/Daily.jpg" alt="Daily">
+  <li>One can view the daily average data and the all time data-</li>
+  <img src="./img/Daily.jpg" alt="Daily"><img src="./img/All-Time.jpg" alt="all-time">
 </ul>
