@@ -1,6 +1,6 @@
 # Time-Keep
 Discover your browsing habits! Time tracking at its best.
-## Problem
+## Problems
 
 It is near to impossible for a chrome user to keep his/her browsing habits in track. 
 <ul>
