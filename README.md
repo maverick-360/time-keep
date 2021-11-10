@@ -1,5 +1,5 @@
-<h1>Time Keep</h1> <img src="./icon/icon-48.png" alt="time keep icon">
-<span>Discover your browsing habits! Time tracking at its best.</span>
+<h1><span>Time Keep<img src="./icon/icon-48.png" alt="time keep icon"></span></h1>
+<b>Discover your browsing habits! Time tracking at its best.</b>
 
 ## Problems
 
