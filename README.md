@@ -1,5 +1,5 @@
 # Time Keep
-<span>Discover your browsing habits! Time tracking at its best.</span><img src="./icon/icon-128.png" alt="time keep icon">
+<span>Discover your browsing habits! Time tracking at its best.</span><img src="./icon/icon-48.png" alt="time keep icon">
 
 ## Problems
 
