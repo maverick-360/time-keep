@@ -18,6 +18,6 @@ So my approach to solve this above problem is by making a <b>Google Chrome Exten
 ## Features
 
 <ul>
-  <li>Time spent on the present opened tab is shown on the Extension icon
-  <img src="./img/Time-Logo.jpg" alt="Time-Logo"></li>
+  <li>Time spent on the present opened tab is shown on the Extension icon</li>
+  <img src="./img/Time-Logo.jpg" alt="Time-Logo">
 </ul>
