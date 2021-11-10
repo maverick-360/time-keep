@@ -32,4 +32,6 @@ So my approach to solve this above problem is by making a <b>Google Chrome Exten
   <img src="./img/Options-2.png" alt="Options">
   <li>One can view the daily average data and the all time data-</li>
   <img src="./img/Daily.jpg" alt="Daily"><img src="./img/All-Time.jpg" alt="all-time">
+  <li>One can view the Overall Stats, the daily stats of specific webpage and the all time stats of a specific webpage -</li>
+  <img src="./img/Stat-1.png" alt="Stats"><img src="./img/Stat-2.png" alt="Stats"><img src="./img/Stat-3.png" alt="Stats">
 </ul>
