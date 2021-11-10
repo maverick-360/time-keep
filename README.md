@@ -42,3 +42,7 @@ So my approach to solve this above problem is by making a <b>Google Chrome Exten
   <img src="./img/Stat-1.png" alt="Stats"><img src="./img/Stat-2.png" alt="Stats"><img src="./img/Stat-3.png" alt="Stats">
   <p>&nbsp;</p>
 </ul>
+
+## Installation
+
+Being a student I am not able to pay the fee for <b>Google Chrome Developer Account</b>. That is why I cannot able to launch the extension in Google Chrome Web Store. So I hereby dropping a video to install the extension.
