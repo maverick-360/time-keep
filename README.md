@@ -46,3 +46,4 @@ So my approach to solve this above problem is by making a <b>Google Chrome Exten
 ## Installation
 
 Being a student I am not able to pay the fee for <b>Google Chrome Developer Account</b>. That is why I cannot able to launch the extension in Google Chrome Web Store. So I hereby dropping a video to install the extension.
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
