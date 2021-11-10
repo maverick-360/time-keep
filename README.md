@@ -1,4 +1,4 @@
-# Time-Keep
+# Time Keep
 <h2>Discover your browsing habits! Time tracking at its best.</h2>
 
 ## Problems
