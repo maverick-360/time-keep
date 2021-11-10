@@ -1,5 +1,5 @@
 # Time Keep
-<h2>Discover your browsing habits! Time tracking at its best.</h2>
+<b>Discover your browsing habits! Time tracking at its best.</b>
 
 ## Problems
 
