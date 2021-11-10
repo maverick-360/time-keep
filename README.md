@@ -1,4 +1,4 @@
-<h1><span>Time Keep <img src="./icon/icon-32.png" alt="time keep icon"></span></h1>
+<h1><span>Time Keep <img src="./Time Keep Extension/icon/icon-32.png" alt="time keep icon"></span></h1>
 <b>Discover your browsing habits! Time tracking at its best.</b>
 
 ## Problems
